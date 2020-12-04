@@ -21,7 +21,7 @@ class Liedje():
 
     def sing(self):
         for a in self.tekst:
-            time.sleep(1.5)
+            time.sleep(2.76190476)
             print(a)
 
 
