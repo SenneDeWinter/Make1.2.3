@@ -5,7 +5,7 @@ het gemiddelde print je af. Zorg dat je de loop kan onderbreken met een door jou
 """
 
 
-import random
+import random                                           #to use random numbers
 
 
 __author__ = "Senne De Winter"
@@ -14,16 +14,16 @@ __status__ = "Development"
 
 
 def print_list(j=False):
-    while True:
-        lijst = []
-        for i in range(20):
-            lijst.append(random.randint(1, 900))
+    while True:                                        #to do something until it's stopped
+        lijst = []                                     #to create an empty list
+        for i in range(20):                            #to do something 20 times
+            lijst.append(random.randint(1, 900))       #to add 20 numbers to a list
             i += 1
-        print(lijst)
-        gemiddelde = sum(lijst)/len(lijst)
-        print(gemiddelde)
-        if input("Wil je Stoppen? j/n:  ") == j:
-            break
+        print(lijst)                                   #to print the list
+        gemiddelde = sum(lijst)/len(lijst)             #to calculate the average
+        print(gemiddelde)                              #to print the average
+        if input("Wil je Stoppen? j/n:  ") == j:       #to ask if the user wants to stop
+            break                                      #to end the loop
 
 
 if __name__ == '__main__':    #code to execute if called from command-line

@@ -7,7 +7,7 @@ variabele: 'verjaardagslied' die een object instantiëert van de Class.
 """
 
 
-import time
+import time                                 #to use time
 
 
 __author__ = "Senne De Winter"
@@ -15,14 +15,14 @@ __email__ = "senne.dewinter@student.kdg.be"
 __status__ = "Production"
 
 
-class Liedje():
-    def __init__(self, tekst):
+class Liedje():                             #to create a class
+    def __init__(self, tekst):              #to initialize the class
         self.tekst = tekst
 
-    def sing(self):
-        for a in self.tekst:
-            time.sleep(2.76190476)
-            print(a)
+    def sing(self):                         #to define the sing function
+        for a in self.tekst:                #to do something for the length of the list
+            time.sleep(2.76190476)          #to wait for 2.76190476 seconds
+            print(a)                        #to print the song line by line
 
 
 liedje = Liedje(["Real hot girl shit", "Ah", "Body-ody-ody-ody-ody-ody-ody-ody","Ody-ody-ody-ody-ody-ody-ody (Mwah)",
@@ -56,6 +56,6 @@ liedje = Liedje(["Real hot girl shit", "Ah", "Body-ody-ody-ody-ody-ody-ody-ody",
                 "ody-ody-ody-ody (Mwah)", "Body-ody-ody-ody-ody-ody-ody-ody","Ody-ody-ody-ody-ody-ody-ody",
                  "Body crazy, curvy, wavy, big titties, lil' waist (Yeah, yeah, yeah)", "Body crazy, curvy, wavy, big "
                 "titties, lil' waist (Mwah)","Body-ody-ody-ody-ody-ody-ody-ody", "Ody-ody-ody-ody-ody-ody-ody",
-                 "Ody-ody-ody-ody", "Mwah"])
+                 "Ody-ody-ody-ody", "Mwah"])                      #to create the song list
 
-liedje.sing()
+liedje.sing()                               #to call the sing function from the class
